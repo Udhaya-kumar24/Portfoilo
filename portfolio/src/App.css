@@ -1,0 +1,434 @@
+:root{
+  --highlight-color: #0788FF;
+  --gradient-light: radial-gradient(circle, rgb(84, 112, 255) 0%, rgba(7, 45, 78, 0.521) 73%);
+  --text-color: #fff;
+  --heading-color: var(--highlight-color);
+  --heading-font: 'bebas';
+  --para-font: 'Roboto';
+  --hover-highlight: #05001f;
+  --dark-change: #000012;
+  --gray-bg: rgba( 7, 136, 255, .1);
+  --theme-rgb: 7, 136, 255;
+}
+.theme-highlight {
+  background: var(--highlight-color);
+}
+.rounded-own {
+  border-radius: 5px;
+}
+body {
+  background: linear-gradient(90deg, #07233b 1.67%, #041d34 39.95%, #04192d 58.24%, #040e18 80.28%, #050c16 101.48%);
+  color: var(--text-color) !important;
+  overflow-x: hidden;
+}
+.text-primary {
+  color: var(--highlight-color) !important;
+}
+.text-color {
+  color: var(--text-color) !important;
+}
+.border-text-color {
+  border-top: 1px solid var(--text-color) !important;
+}
+.grey-bg {
+  background-color: var(--gray-bg);
+  background: var(--gray-bg);
+}
+.home-para {
+  color: var(--text-color);
+  font-family: var(--para-font);
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-top: 1.2rem;
+}
+.about-para {
+  color: var(--text-color);
+  font-family: var(--para-font);
+  font-weight: 400;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  letter-spacing: 2px;
+  margin-top: 1.2rem;
+  text-align: justify;
+}
+.exp-para {
+  color: var(--text-color);
+  font-family: var(--para-font);
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.roboto-text {
+  font-family: 'Roboto' !important;
+}
+.bebas {
+  font-family: 'bebas' !important;
+}
+#tsparticles,
+#tsparticles_snow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.highlight-bg {
+  background-color: var(--highlight-color) !important;
+  background: var(--highlight-color) !important;
+}
+.nav_own.colorChange {
+  background: var(--dark-change);
+  z-index: 99999;
+  transition: all 0.3s ease-in;
+}
+.nav_own {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s ease-out;
+  margin-bottom: 3rem;
+  z-index: 1;
+}
+.menu-text {
+  font-family: var(--para-font);
+  font-weight: 500;
+  font-size: 1.05rem;
+  cursor: pointer;
+  color: var(--text-color) !important;
+  margin: 0 1.5rem;
+}
+.menu-text:after {
+  display      : block;
+  content      : '';
+  border-bottom: solid 2px var(--text-color);
+  transform    : scaleX(0);
+  transform-origin: 0 50%;
+  transition   : transform 300ms ease-in-out;
+}
+
+.menu-text.active:after,
+.menu-text:hover:after {
+  transform: scaleX(1);
+}
+
+.logo-txt {
+  border-radius: 5px;
+  font-size: 2.2rem;
+  display: inline-block;
+  width: 2rem;
+  height: 2.8rem;
+  text-align: center;
+}
+.logo {
+  font-size: 2.3rem !important;
+  letter-spacing: 3px !important;
+  margin-left: 0.4rem;
+}
+.section-height {
+  min-height: 100vh;
+}
+.pt-6{
+  padding-top: 6rem;
+}
+.short_name {
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+  color: var(--text-color);
+  letter-spacing: 3px;
+}
+.bg-glossy {
+    /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+.pointer {
+  position: fixed;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  pointer-events: none; /* Prevent the pointer from interfering with mouse events */
+  transition: all 0.1s ease-out;
+  z-index: 1000; /* Ensure the pointer is above other content */
+}
+.Typewriter {
+  display: inline;
+}
+
+.heading {
+  font-size: 5rem !important;
+  font-family: var(--para-font);
+  font-weight: 500;
+}
+.heading-sub {
+  font-family: var(--para-font);
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin: 1rem 0 !important;
+}
+.heading-exp {
+  font-family: var(--para-font);
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin: 1rem 0 !important;
+}
+
+.effect-3 {
+  transition: all 0.5s ease-in-out;
+}
+.effect-3.active {
+  transform: translate(-5%, 5%);
+}
+
+.effect-2 {
+  top: 0;
+  right: 0%;
+  z-index: 1;
+  transition: all 0.8s ease-in-out;
+}
+.effect-2.active {
+  transform: translate(5%, -5%);
+}
+
+.is-floating-animate,
+ul.skills::before{
+  animation: float-up-down 2s ease-in-out infinite both;
+}
+
+button {
+  background: var(--highlight-color) !important;
+  color: var(--text-color) !important;
+  font-size: 1.05rem;
+  font-family: var(--para-font) !important;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+button:hover {
+  border: 1px solid var(--text-color) !important;
+  background-color: var(--hover-highlight) !important;
+}
+
+@keyframes float-up-down {
+  0% {
+      -webkit-transform:translateY(0)
+  }
+
+  50% {
+      -webkit-transform: translateY(-10%);
+      transform:translateY(-10%)
+  }
+
+  100% {
+      -webkit-transform: translateY(0);
+      transform:translateY(0)
+  }
+}
+
+.move-effect {
+  animation: float-right-left 2s ease-in-out infinite both;
+}
+
+@keyframes float-right-left {
+  0% {
+      -webkit-transform:translateX(0)
+  }
+
+  50% {
+      -webkit-transform: translateX(-10%);
+      transform:translateX(-10%)
+  }
+
+  100% {
+      -webkit-transform: translateX(0);
+      transform:translateX(0)
+  }
+}
+
+.translate-Y {
+  transform:translateY(0);
+  -webkit-transform:translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+.translate-Y:hover {
+  transform:translateY(-10%);
+  -webkit-transform:translateY(-10%);
+}
+
+/* Progress Bar */
+.progressVisualFull {
+  display: flex;
+  /* change the value if you want different thickness */
+  height: 6px;
+  margin: 20px 0;
+}
+
+.progressVisualPart {
+  /* Number of the seconds for complete animation */
+  transition: width 2s;
+  background: var(--highlight-color);
+  filter: blur(2px);
+  border: 1px solid var(--text-color);
+}
+
+.progressLabel {
+  /* Nothing here, move along */
+  font-family: var(--para-font);
+}
+
+/* Progress Bar End */
+
+.effect-1.clockwise > img{
+  animation: rotate360 40s linear infinite reverse;
+}
+.effect-1.anti-clockwise > img{
+  animation: rotate360 40s linear infinite;
+}
+
+@keyframes rotate360 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(1turn);
+      transform: rotate(1turn);
+  }
+}
+
+.left-dot {
+  bottom: -20%;
+  right: 3%;
+  z-index: -1;
+}
+.big-circle {
+  bottom: -20%;
+  left: 0;
+  z-index: -1;
+}
+.mid-circle {
+  top: -10%;
+  right: 5%;
+  z-index: -1;
+}
+.right-circle {
+  top:30%;
+  right: -12%;
+  z-index: -1;
+}
+
+.frame {
+  /* From https://css.glass */
+  background: #545c6377;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 3px var(--highlight-color);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(9.8px);
+  border: 1px solid rgba(31, 55, 79, 0.28);
+  display: inline-block;
+  min-width: 25rem;
+  max-width: 28rem;
+}
+
+.radial-bg {
+  background: var(--gradient-light);
+}
+
+/* Contact */
+.bg-theme-glass {
+  /* From https://css.glass */
+background: rgba(31, 55, 79, 0.71);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.1px);
+-webkit-backdrop-filter: blur(3.1px);
+border: 1px solid rgba(31, 55, 79, 0.45);
+}
+input, textarea, select, .form-control {
+    /* From https://css.glass */
+  /* background-color: transparent !important; */
+  background-color: #6565653b !important;
+  background: #6565653b !important;
+  border: 1px solid rgba(160, 160, 160, 0.349) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid rgba(212, 212, 212, 0.54);
+  transition: all 0.3s ease-in-out;
+}
+.form-control:focus {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 2px 3px var(--highlight-color) !important;
+}
+.frame-contact {
+  /* From https://css.glass */
+  background: #545c6377;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 3px var(--highlight-color);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(9.8px);
+  border: 1px solid rgba(31, 55, 79, 0.28);
+  display: inline-block;
+  min-width: 18rem;
+  max-width: 21rem;
+}
+.exp-section {
+  backdrop-filter: blur(6.1px);
+  transition: all 0.3s ease-in-out;
+}
+.exp-section:hover {
+  box-shadow: 0 0 3px 3px var(--highlight-color);
+  transform: scale(1.01);
+}
+
+.mail-link:hover {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.mail-top {
+  font-family: var(--heading-font);
+  letter-spacing: 2.2px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  font-weight: 100;
+  opacity: 0.5;
+}
+.mail-link {
+  font-family: var(--para-font);
+  letter-spacing: 1.2px;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0rem 0 0.5rem 0;
+  padding: 0;
+}
+/* Contact end */
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px; /* width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* color of the scrollbar handle */
+  border-radius: 5px; /* roundness of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color of the scrollbar handle on hover */
+}

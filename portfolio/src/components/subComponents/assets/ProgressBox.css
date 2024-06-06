@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+  --b2: var(--dark-change);
+  --text-color: #fff;
+  --w2: var(--text-color);
+  --t1: all 0.5s ease 0s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.profileSkills {
+  display: flex;
+  /* top: 150px; */
+  position: relative;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.profileSkills > div {
+  width: 100%;
+  margin-right: 3%;
+  border-radius: 2px;
+  position: relative;
+}
+
+.profileSkills label {
+  background: var(--text-color);
+  position: absolute;
+  top: -71px;
+  left: 22px;
+  z-index: 2;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: var(--t1);
+  box-shadow: 0 0 0 0 var(--text-color);
+}
+.profileSkills label:before {
+  border-color: var(--highlight-color) !important;
+}
+.profileSkills label:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 11px;
+  z-index: 2;
+  border: 9px solid #000;
+  border-top-width: 0;
+  border-right-width: 0;
+  transform: rotate(-45deg);
+  width: 33px;
+  height: 22px;
+  border-radius: 2px;
+  transition: var(--t1);
+}
+
+ul.skills {
+  width: 100%;
+  position: relative;
+  padding: 25px 35px;
+  /* background: linear-gradient(0deg, var(--highlight-color) 0 10px, var(--b2) 0 calc(100% - 10px), var(--highlight-color) 0 100%); */
+  background: rgba(0, 0, 0, 0.53);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.7px);
+-webkit-backdrop-filter: blur(10.7px);
+border: 1px solid rgba(0, 0, 0, 0.2);
+transition: all 0.3s ease-in-out;
+}
+
+ul.skills:before {
+  /* content: "Skills"; */
+  text-transform: uppercase;
+  position: absolute;
+  top: -75px;
+  height: 60px;
+  color: var(--text-color);
+  background: var(--dark-change);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.7px);
+  -webkit-backdrop-filter: blur(10.7px);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  left: 0;
+  border-radius: 5px;
+  padding: 15px 15px 0 0;
+  text-align: end;
+  font-weight: 600;
+  z-index: 1;
+  transition: var(--t1);
+  font-size: 30px;
+  line-height: 35px;
+  transform: scaleY(1.65);
+}
+
+ul.skills:after {
+  content: "";
+  position: absolute;
+  border: 40px solid #fff0;
+  border-top-color: var(--b2);
+  top: -30px;
+  left: 10px;
+  z-index: 0;
+  transition: var(--t1);
+  filter: drop-shadow(0 11px 0.1px var(--text-color));
+}
+
+ul.skills:hover {
+    border: 3px solid var(--highlight-color);
+    box-shadow: 0 0 4px 1px var(--highlight-color);
+}
+
+ul.skills:hover:before {
+  background-color: var(--highlight-color);
+  backdrop-filter: blur(10.7px);
+}
+
+ul.skills:hover:after {
+  top: -20px;
+  border-top-color: var(--highlight-color);
+}
+
+ul.skills li {
+  margin: 0 0 5px 0;
+  list-style: none;
+  padding: 20px 0;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: var(--w2);
+}
+
+ul.skills li:before {
+  content: "";
+  position: absolute;
+  background: #1c1c1c;
+  height: 16px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+  border: 1px solid #111;
+  border-color: #111 #323232 #323232 #111;
+  background: linear-gradient(
+    90deg,
+    #2292dd40 50%, /* Adjust this value dynamically in the component */
+    #1c1c1c 50% /* Adjust this value dynamically in the component */
+  );
+}
+
+ul.skills li:after {
+  content: "";
+  height: 11px;
+  margin: 0 0 2px 0;
+  background: var(--highlight-color);
+  position: absolute;
+  box-shadow: 0px 0px 10px 1px #00c6ff66;
+  left: 3px;
+  width: 0%; /* Adjust this value dynamically in the component */
+  bottom: 0;
+  transition: all 1.5s ease 0s;
+}
+
+ul.skills li:hover {
+  filter: brightness(1.5);
+  transition: var(--t1);
+}
+
+/* ul.skills:hover li:after {
+  width: 50%; Adjust this value dynamically in the component
+} */
+
+ul.skills li span {
+  font-weight: 500;
+}
+
+ul.skills li span:before {
+  position: absolute;
+  right: -25px;
+  top: 43px;
+  transition: var(--t1);
+  content: "";
+  opacity: 1;
+  border: 7px solid #fff0;
+}
+
+ul.skills li:hover span:before {
+  right: calc(calc(50%) - 12px); /* Adjust this value dynamically in the component */
+  opacity: 1;
+  border-right-color: var(--highlight-color);
+}
+
+ul.skills li span:after {
+  position: absolute;
+  right: -40px;
+  top: 38px;
+  transition: var(--t1);
+  /* counter-reset: percent 50; Adjust this value dynamically in the component */
+  /* content: counter(percent); */
+  color: var(--text-color) !important;
+  opacity: 1 !important;
+  padding: 4px 6px;
+  border-radius: 1px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+ul.skills li:hover span:after {
+  right: calc(calc(85 - 50%) * 1%); /* Adjust this value dynamically in the component */
+  right: calc(calc(50%) - 40px); /* Adjust this value dynamically in the component */
+  opacity: 1;
+  background: var(--highlight-color);
+}
