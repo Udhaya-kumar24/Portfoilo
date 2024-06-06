@@ -1,7 +1,7 @@
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
-import { Link as ScrollLink, Element } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 const TopBar = () => {
 
