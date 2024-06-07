@@ -16,7 +16,7 @@ function About(props) {
       <div className={`px-4 grey-bg ${props.className}`} id={props.id}>
         <div className="row">
 
-          <div className="col-12 col-md-5 position-realtive text-center">
+          <div className="col-12 col-lg-5 position-realtive text-center">
             <div className="frame">
               <img src={mainProfile} alt="" className='radial-bg img-fluid' />
             </div>
@@ -26,8 +26,7 @@ function About(props) {
           </div>
 
 
-          <div className="col-12 col-md-5 mt-5 mt-lg-0">
-
+          <div className="col-12 col-md-7 col-lg-5 mt-5 mt-lg-0 position-realtive">
             <div className="row">
               <div className="col-12">
                 <span className='bg-glossy px-3 py-1 short_name'>ABOUT US</span>
@@ -43,12 +42,9 @@ function About(props) {
               </div>
 
             </div>
-
-
-
           </div>
 
-          <div className="col-12 d-none d-lg-block col-md-2 position-realtive">
+          <div className="col-12 col-lg-2 d-none d-lg-block position-realtive">
             <div className="effect-1 anti-clockwise">
               <img src={circle_1} alt="Dot" className='position-absolute mid-circle' />
             </div>

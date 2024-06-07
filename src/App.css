@@ -42,10 +42,13 @@
   font-size: 1.2rem;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background: linear-gradient(90deg, #07233b 1.67%, #041d34 39.95%, #04192d 58.24%, #040e18 80.28%, #050c16 101.48%);
   color: var(--text-color) !important;
-  overflow-x: hidden;
 }
 .text-primary {
   color: var(--highlight-color) !important;
@@ -335,12 +338,12 @@ button:hover {
   z-index: -1;
 }
 .big-circle {
-  bottom: -20%;
+  top: 35%;
   left: 0;
   z-index: -1;
 }
 .mid-circle {
-  top: -10%;
+  top: -20%;
   right: 5%;
   z-index: -1;
 }
@@ -467,13 +470,16 @@ input, textarea, select, .form-control {
   margin-left: 12% !important;
 }
 
+@media only screen and (max-width: 1023px) {
+  .heading {
+    font-size: 2.5rem !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   /* Adjust sizes for smaller screens */
   :root {
     font-size: 14px; /* Decrease base font size for smaller screens */
-  }
-  .heading {
-    font-size: 2.5rem !important;
   }
   .big-circle {
     bottom: -10%;
@@ -494,5 +500,13 @@ input, textarea, select, .form-control {
   }
   .menu-text {
     margin: 0.5rem 0;
+  } 
+  
+}
+
+@media screen and (min-width: 767px) {
+  .frame {
+    max-width: 22rem;
+    min-width: 15rem;
   }
 }
