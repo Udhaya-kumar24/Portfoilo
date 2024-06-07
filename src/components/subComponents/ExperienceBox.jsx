@@ -11,7 +11,7 @@ const ExperienceBox = ({title,exp,language,companyName,content}) => {
             <hr className='border-text-color my-2'/>
             <p className='exp-para my-1'>{language}</p>
           </div>
-          <div className="col-12 col-lg-9">
+          <div className="col-12 col-lg-9 mt-3 mt-lg-0">
             <h3 className='heading-exp p-0 m-0'>{companyName}</h3>
             <p className='exp-para'>{content}</p>
           </div>

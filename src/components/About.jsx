@@ -16,7 +16,7 @@ function About(props) {
       <div className={`px-4 grey-bg ${props.className}`} id={props.id}>
         <div className="row">
 
-          <div className="col-12 col-lg-5 position-realtive text-center">
+          <div className="col-12 col-md-5 position-realtive text-center">
             <div className="frame">
               <img src={mainProfile} alt="" className='radial-bg img-fluid' />
             </div>
