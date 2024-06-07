@@ -48,7 +48,7 @@ function Homes(props) {
             </ButtonGroup>
           </div>
 
-          <div className="col-12 col-md-4 text-center">
+          <div className="col-12 col-md-4 text-center mt-5 mt-lg-0">
             <div className="position-relative" onMouseOver={() => setImageHover(true)} onMouseOut={() => setImageHover(false)}>
               <img src={mainProfile} alt="Profile" className={`position-absolute img-fluid effect-2 ${imageHover ? 'active' : ''}`} />
               <img src={squareDot} alt="Dot" className={`is-floating-animated-down img-fluid effect-3 ${imageHover ? 'active' : ''}`} />
