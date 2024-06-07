@@ -46,7 +46,7 @@ function Skills(props) {
         <div className="row my-4 py-4 align-items-center justify-content-around">
           {
             arr.map((key,val) => {
-              return <div className="col-3" progress-box="True" key={val+1}>
+              return <div className="col-12 col-lg-3 py-5 my-5 py-lg-0 my-lg-0" progress-box="True" key={val+1}>
               <ProgressBox skills={key}  index={val+1} name={arr_1[val]}/>
             </div>
             })

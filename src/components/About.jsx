@@ -4,8 +4,8 @@ import mainProfile from '../images/mainProfile.png';
 import circle_1 from '../images/circle.svg';
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Button from "react-bootstrap/Button";
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import resume from '../UdhayResume.pdf'
 
@@ -16,7 +16,7 @@ function About(props) {
       <div className={`px-4 grey-bg ${props.className}`} id={props.id}>
         <div className="row">
 
-          <div className="col-5 position-realtive text-center">
+          <div className="col-12 col-md-5 position-realtive text-center">
             <div className="frame">
               <img src={mainProfile} alt="" className='radial-bg img-fluid' />
             </div>
@@ -26,7 +26,7 @@ function About(props) {
           </div>
 
 
-          <div className="col-5">
+          <div className="col-12 col-md-5 mt-5 mt-lg-0">
 
             <div className="row">
               <div className="col-12">
@@ -48,7 +48,7 @@ function About(props) {
 
           </div>
 
-          <div className="col-2 position-realtive">
+          <div className="col-12 d-none d-lg-block col-md-2 position-realtive">
             <div className="effect-1 anti-clockwise">
               <img src={circle_1} alt="Dot" className='position-absolute mid-circle' />
             </div>

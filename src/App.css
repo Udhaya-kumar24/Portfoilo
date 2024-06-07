@@ -9,6 +9,7 @@
   --dark-change: #000012;
   --gray-bg: rgba( 7, 136, 255, .1);
   --theme-rgb: 7, 136, 255;
+    font-size: 16px;
 }
 .theme-highlight {
   background: var(--highlight-color);
@@ -16,6 +17,31 @@
 .rounded-own {
   border-radius: 5px;
 }
+.navbar-light .navbar-toggler-icon {
+  background : none !important;
+  position: relative
+}
+.navbar-toggler {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50% !important;
+}
+.navbar-toggler.collapsed .navbar-toggler-icon::before {
+  content: '\f0c9';
+}
+.navbar-toggler .navbar-toggler-icon::before {
+  content: '\f00d';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  top: 18%;
+  left: 0;
+  /* right: 0; */
+  bottom: 0;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
 body {
   background: linear-gradient(90deg, #07233b 1.67%, #041d34 39.95%, #04192d 58.24%, #040e18 80.28%, #050c16 101.48%);
   color: var(--text-color) !important;
@@ -351,6 +377,9 @@ backdrop-filter: blur(3.1px);
 -webkit-backdrop-filter: blur(3.1px);
 border: 1px solid rgba(31, 55, 79, 0.45);
 }
+.is-invalid~.invalid-feedback, .is-invalid~.invalid-tooltip, .was-validated :invalid~.invalid-feedback, .was-validated :invalid~.invalid-tooltip {
+  color: #ff9696;
+}
 input, textarea, select, .form-control {
     /* From https://css.glass */
   /* background-color: transparent !important; */
@@ -363,6 +392,7 @@ input, textarea, select, .form-control {
   -webkit-backdrop-filter: blur(2.9px);
   border: 1px solid rgba(212, 212, 212, 0.54);
   transition: all 0.3s ease-in-out;
+  color: var(--text-color) !important;
 }
 .form-control:focus {
   transition: all 0.3s ease-in-out;
@@ -431,4 +461,38 @@ input, textarea, select, .form-control {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; /* color of the scrollbar handle on hover */
+}
+.contact-div {
+  margin-top: 48% !important;
+  margin-left: 12% !important;
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust sizes for smaller screens */
+  :root {
+    font-size: 14px; /* Decrease base font size for smaller screens */
+  }
+  .heading {
+    font-size: 2.5rem !important;
+  }
+  .big-circle {
+    bottom: -10%;
+  }
+  .exp-section, .exp-section:hover {
+    backdrop-filter: blur(1);
+    transform: scale(1);
+  }
+  .contact-div {
+    margin-top: 1rem !important;
+    margin-left: 0rem !important;
+  }
+  .h-100vh {
+    height: 90vh;
+  }
+  .navbar-nav .nav-link {
+    font-size: 2rem;
+  }
+  .menu-text {
+    margin: 0.5rem 0;
+  }
 }

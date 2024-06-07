@@ -9,6 +9,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import PointerAnimation from "./components/subComponents/Pointer";
 // import ParticlesComponent from "./components/subComponents/Particles";
+
  
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
         <PointerAnimation />
         <TopBar />
         <Homes className="section-height pt-6" id="homes" />
-        <About className="section-height pt-6" id="about"/>
-        <Skills className="section-height pt-6" id="skills"/>
+        <About className="section-height pt-6 pb-5 pb-lg-0" id="about"/>
+        <Skills className="section-height pt-6" id="skills"/> 
         <Experience className="section-height pt-6" id="experience"/>
         <Contact className="section-height pt-6" id="contact"/>
       </div>

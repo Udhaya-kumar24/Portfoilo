@@ -22,7 +22,7 @@ function Homes(props) {
     <section className="mx-4">
       <div className={props.className} id={props.id}>
         <div className="row align-items-center mt-5">
-          <div className="col-8">
+          <div className="col-12 col-md-8">
             <span className='bg-glossy px-3 py-1 short_name'>UDHAYA KUMAR</span>
             <h3 className='heading mb-0 mt-2'>I'm Udhay</h3>
             <h3 className='heading d-inline text-primary mb-0'>I'm A <Typewriter
@@ -48,10 +48,10 @@ function Homes(props) {
             </ButtonGroup>
           </div>
 
-          <div className="col-4 text-center">
+          <div className="col-12 col-md-4 text-center">
             <div className="position-relative" onMouseOver={() => setImageHover(true)} onMouseOut={() => setImageHover(false)}>
-              <img src={mainProfile} alt="Profile" className={`position-absolute effect-2 ${imageHover ? 'active' : ''}`} />
-              <img src={squareDot} alt="Dot" className={`is-floating-animated-down effect-3 ${imageHover ? 'active' : ''}`} />
+              <img src={mainProfile} alt="Profile" className={`position-absolute img-fluid effect-2 ${imageHover ? 'active' : ''}`} />
+              <img src={squareDot} alt="Dot" className={`is-floating-animated-down img-fluid effect-3 ${imageHover ? 'active' : ''}`} />
             </div>
           </div>
         </div>

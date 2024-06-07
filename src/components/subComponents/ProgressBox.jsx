@@ -5,7 +5,7 @@ const ProgressBox = ({skills , index:ind, name}) => {
   return (
       <div className="profileSkills">
         <div>
-          <label for="skill"></label>
+          <label htmlFor="skill"></label>
           <ul className="skills">
             {skills.map((skill, index) => (
               <li key={index} style={{
