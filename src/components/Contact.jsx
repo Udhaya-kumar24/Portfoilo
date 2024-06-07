@@ -38,7 +38,7 @@ function Contact(props) {
 
 	return (
 		<section className='position-relative'>
-			{/* <StarCanvas /> */}
+			<StarCanvas />
 			<div className={`px-4 position-relative d-flex align-items-center ${props.className}`} id={props.id}>
 				<div className="bg-theme-glass container-fluid">
 					<div className="row py-4">
