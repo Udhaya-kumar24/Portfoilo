@@ -7,13 +7,14 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import PointerAnimation from "./components/subComponents/Pointer";
-// import ParticlesComponent from "./components/subComponents/Particles";
 
  
 function App() {
   return (
       <div> 
+
         <PointerAnimation />
         <TopBar />
         <Homes className="section-height pt-6" id="homes" />
@@ -21,6 +22,7 @@ function App() {
         <Skills className="section-height pt-6" id="skills"/> 
         <Experience className="section-height pt-6" id="experience"/>
         <Contact className="section-height pt-6" id="contact"/>
+        <Footer />
       </div>
   );
 }

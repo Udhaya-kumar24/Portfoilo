@@ -211,6 +211,7 @@ body {
 }
 
 .effect-3 {
+  animation: float-up-down 2s ease-in-out infinite both;
   transition: all 0.5s ease-in-out;
 }
 .effect-3.active {
@@ -221,11 +222,12 @@ body {
   top: 0;
   right: 0%;
   z-index: 1;
+  animation: float-up-down 2s ease-in-out infinite both;
   transition: all 0.8s ease-in-out;
 }
-.effect-2.active {
+/* .effect-2.active {
   transform: translate(5%, -5%);
-}
+} */
 
 .is-floating-animate,
 ul.skills::before{
@@ -251,8 +253,8 @@ button:hover {
   }
 
   50% {
-      -webkit-transform: translateY(-10%);
-      transform:translateY(-10%)
+      -webkit-transform: translateY(-3%);
+      transform:translateY(-3%)
   }
 
   100% {
