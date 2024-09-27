@@ -29,6 +29,15 @@
 .navbar-toggler.collapsed .navbar-toggler-icon::before {
   content: '\f0c9';
 }
+.bg-trans {
+  background: #545c6377;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 3px var(--highlight-color);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(9.8px);
+  border: 1px solid rgba(31, 55, 79, 0.28);
+}
+
 .navbar-toggler .navbar-toggler-icon::before {
   content: '\f00d';
   font-family: 'Font Awesome 5 Free';
@@ -370,6 +379,10 @@ button:hover {
 
 .radial-bg {
   background: var(--gradient-light);
+}
+
+.table-hover tbody tr:hover {
+  color: #fff;
 }
 
 /* Contact */
